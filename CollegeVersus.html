@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>College Versus</title>
+<link rel="stylesheet" type="text/css" href="main.css"/> 
+</head>
+<body>
+  <header class="container">
+    <div class="row">
+    <a href="CollegeVersus.html"><img src="LogoFinal.jpg"></a>
+    <nav class="pictures">
+      <form>
+        <input type="text" name="user" placeholder="Username or Email"/>
+        <input type="password" name="pass" placeholder="Password"/>
+        <input type="submit" value="Log In"/>
+        <p>Don't have an account? Sign up <a href="signup.html">here</a>.</p>
+        </form>
+       
+  </nav>
+      
+    </div>
+  </header>
+
+<div class="hero">
+  <div id="tfheader">
+    <form id="tfnewsearch" method="get" action="http://www.collegeversus.com">
+        <input type="text" class="tftextinput" id="tftextinput" name="q" size="21" maxlength="120" placeholder="Search"/><input type="submit" value="Search" class="tfbutton"/>
+    </form>
+<div class="tfclear"></div>
+</div>
+<script>
+    var a = document.getElementById('tfnewsearch');
+    a.addEventListener('submit',function(e) {
+        e.preventDefault();
+        var b = document.getElementById('tftextinput').value;
+        window.location.href = 'http://collegeversus.com/'+b;
+
+    });
+
+</script>
+  <p><a href="">Parties</a></p>
+   <p><a href="">Sports</a></p>
+  <p><a href="">Sporting Spectators</a></p>
+  <p><a href="">Food</a></p>
+  <p><a href="">Campus Experience</a></p>
+  <p><a href="">Housing</a></p>
+  <p><a href="">Frat Life</a></p>
+  <p><a href="">Scenery</a></p>
+  <p><a href="">Night Life</a></p>
+  <p><a href="">Coolest Professors</a></p>
+  <p><a href="">School Sponsored Events</a></p>
+  <p><a href="">Clubs</a></p>
+  <p><a href="">Strongest Students</a></p>
+  <p><a href="">Drinking Games</a></p>
+  <p><a href="">Most Talented Students</a></p>
+  
+</div>
+<iframe width="700" height="500" src="https://www.youtube.com/embed/zsRzD-aRybQ?autoplay=1" frameborder="0" allowfullscreen></iframe>
+<footer class="container">
+    <div class="row">
+      <p class="col-sm-4">2017 &copy; College Versus</p>
+      </div>
+
+  </footer>
+</body>
+</html>
